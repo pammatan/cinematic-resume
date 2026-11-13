@@ -46,8 +46,8 @@ export const profile: Profile = {
   location: "กรุงเทพฯ",
   availableLabel: "พร้อมร่วมงาน",
   email: "hello@example.com",
-  portrait: "/portrait.png?v=2",
-  cv: "/cv.pdf",
+  portrait: `${import.meta.env.BASE_URL}portrait.png?v=2`,
+  cv: `${import.meta.env.BASE_URL}cv.pdf`,
   sampleNotice:
     "เนื้อหาบนหน้านี้เป็นตัวอย่าง เปลี่ยนชื่อ รูป และประวัติได้ที่ไฟล์ src/content/profile.ts",
   socials: [
