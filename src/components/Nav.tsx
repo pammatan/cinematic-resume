@@ -31,6 +31,16 @@ export function Nav() {
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-40">
+      <div className="hero-brand">
+        <svg viewBox="0 0 36 36" className="h-9 w-9" aria-hidden="true">
+          <path d="M3 31 16 4h6L9 31H3Z" fill="#ff2a1a" />
+          <path d="M15 31 26 6h7L22 31h-7Z" fill="#ff5a45" />
+        </svg>
+        <p>
+          <strong>Portfolio</strong>
+          <small>My Profile</small>
+        </p>
+      </div>
       <nav
         className="pointer-events-auto absolute top-4 left-1/2 flex -translate-x-1/2 items-center rounded-full bg-[#e10600] px-1.5 py-1 shadow-[0_0_22px_rgba(225,6,0,0.45)]"
         aria-label="ส่วนของหน้า"

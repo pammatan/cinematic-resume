@@ -77,17 +77,6 @@ export function Hero() {
         <span />
       </div>
 
-      <div className="hero-brand">
-        <svg viewBox="0 0 36 36" className="h-9 w-9" aria-hidden="true">
-          <path d="M3 31 16 4h6L9 31H3Z" fill="#ff2a1a" />
-          <path d="M15 31 26 6h7L22 31h-7Z" fill="#ff5a45" />
-        </svg>
-        <p>
-          <strong>Portfolio</strong>
-          <small>My Profile</small>
-        </p>
-      </div>
-
       <div className="hero-stage">
         <div className="hero-copy">
           <div>

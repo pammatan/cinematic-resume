@@ -409,15 +409,26 @@ html[data-motion="on"] {
 }
 
 @media (max-width: 700px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.75rem 0;
+  }
+
   .hero {
-    height: 100dvh;
-    min-height: 100dvh;
-    padding: 6.15rem 0.85rem 0.7rem;
+    height: auto;
+    min-height: calc(100dvh - 5.6rem);
+    padding: 0.35rem 0.85rem 0.7rem;
   }
 
   .hero-brand {
-    top: 0.65rem;
-    left: 0.75rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    align-self: flex-start;
   }
 
   .hero-brand svg {
@@ -449,13 +460,15 @@ html[data-motion="on"] {
   }
 
   header nav[aria-label="ส่วนของหน้า"] {
-    top: 3.7rem !important;
-    left: 50% !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
     right: auto !important;
     width: max-content;
-    max-width: calc(100% - 1.5rem);
+    max-width: 100%;
+    margin: 0;
     transform: none !important;
-    translate: -50% 0 !important;
+    translate: none !important;
     justify-content: center;
     padding: 0.16rem 0.55rem;
   }
