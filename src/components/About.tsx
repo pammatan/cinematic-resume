@@ -4,11 +4,11 @@ import { SectionHeading } from "./SectionHeading";
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 border-t border-line py-28">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-[1.1fr_0.9fr] gap-14 px-10">
+    <section id="about" className="scroll-mt-24 border-t border-line py-16 md:py-28">
+      <div className="mx-auto grid max-w-[1400px] gap-10 px-5 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
         <Reveal>
           <SectionHeading eyebrow="เกี่ยวกับ" title="THE PERSON" />
-          <p className="mt-8 max-w-xl text-3xl leading-snug">
+          <p className="mt-6 max-w-xl text-xl leading-snug md:mt-8 md:text-3xl">
             ฉันคือ {profile.name} จาก {profile.location} ทำงานระหว่างการออกแบบกับการเล่าเรื่อง
             เพื่อให้ของที่ทำแล้วคนใช้ต่อได้จริง
           </p>

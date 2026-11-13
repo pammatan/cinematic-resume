@@ -11,7 +11,7 @@ export function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
   return (
     <div>
       <p className="text-[0.72rem] tracking-[0.22em] text-blood">{eyebrow}</p>
-      <h2 className="mt-3 text-7xl leading-[0.95] font-semibold tracking-tight">
+      <h2 className="mt-3 text-4xl leading-[0.95] font-semibold tracking-tight md:text-7xl">
         {lead ? <span className="text-paper">{lead} </span> : null}
         <span className="text-blood">{accent}</span>
       </h2>

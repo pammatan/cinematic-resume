@@ -20,8 +20,8 @@ export function Work() {
       : profile.projects.filter((item) => item.category === category);
 
   return (
-    <section id="work" className="scroll-mt-24 py-28">
-      <div className="mx-auto max-w-[1400px] px-10">
+    <section id="work" className="scroll-mt-24 py-16 md:py-28">
+      <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <Reveal>
           <SectionHeading eyebrow="ผลงาน" title="SELECTED WORK" />
         </Reveal>
@@ -55,7 +55,7 @@ export function Work() {
               <li key={project.id} className="border-b border-line">
                 <button
                   type="button"
-                  className="grid w-full grid-cols-[6rem_1fr_auto] items-end gap-8 py-8 text-left"
+                  className="grid w-full gap-3 py-6 text-left md:grid-cols-[6rem_1fr_auto] md:items-end md:gap-8 md:py-8"
                   onClick={(event) => {
                     opener.current = event.currentTarget;
                     setSelected(project);
@@ -69,7 +69,7 @@ export function Work() {
                     <span className="block text-[0.72rem] tracking-[0.16em] text-signal">
                       {project.category}
                     </span>
-                    <span className="mt-2 block text-4xl leading-tight">
+                    <span className="mt-2 block text-2xl leading-tight md:text-4xl">
                       {project.title}
                     </span>
                   </span>

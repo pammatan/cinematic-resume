@@ -10,9 +10,6 @@ import "@fontsource/ibm-plex-sans-thai/thai-600.css";
 import "@fontsource/ibm-plex-sans-thai/thai-700.css";
 import "./styles/global.css";
 import { App } from "./App";
-import { fitDesktop } from "./fit";
-
-fitDesktop();
 
 const root = document.getElementById("root");
 if (!root) throw new Error("ไม่พบจุดเริ่มของหน้า");

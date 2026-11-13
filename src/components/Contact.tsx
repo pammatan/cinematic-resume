@@ -34,8 +34,8 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 border-t border-line py-28">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-14 px-10">
+    <section id="contact" className="scroll-mt-24 border-t border-line py-16 md:py-28">
+      <div className="mx-auto grid max-w-[1400px] gap-10 px-5 md:px-10 lg:grid-cols-2 lg:gap-14">
         <Reveal>
           <SectionHeading eyebrow="ติดต่อ" title="LET'S TALK" />
           <p className="mt-8 max-w-md text-lg leading-relaxed text-mute">
