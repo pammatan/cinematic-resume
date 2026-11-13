@@ -412,7 +412,7 @@ html[data-motion="on"] {
   .hero {
     height: 100dvh;
     min-height: 100dvh;
-    padding: 3.5rem 0.85rem 0.7rem;
+    padding: 6.15rem 0.85rem 0.7rem;
   }
 
   .hero-brand {
@@ -449,21 +449,24 @@ html[data-motion="on"] {
   }
 
   header nav[aria-label="ส่วนของหน้า"] {
-    top: 0.55rem !important;
-    right: 0.4rem !important;
-    left: auto !important;
-    max-width: calc(100% - 8.6rem);
+    top: 3.7rem !important;
+    left: 50% !important;
+    right: auto !important;
+    width: max-content;
+    max-width: calc(100% - 1.5rem);
     transform: none !important;
-    translate: none !important;
-    padding: 0.12rem 0.2rem;
+    translate: -50% 0 !important;
+    justify-content: center;
+    padding: 0.16rem 0.55rem;
   }
 
   header nav[aria-label="ส่วนของหน้า"] a {
-    padding: 0.28rem 0.3rem;
-    font-size: 0.72rem;
+    padding: 0.28rem 0.42rem;
+    font-size: 0.78rem;
   }
 
-  header nav[aria-label="ส่วนของหน้า"] > a:first-child {
+  header nav[aria-label="ส่วนของหน้า"] > a:first-child,
+  header nav[aria-label="ส่วนของหน้า"] > span:first-of-type > span {
     display: none;
   }
 
