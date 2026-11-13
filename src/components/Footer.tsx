@@ -1,0 +1,24 @@
+import { profile } from "../content/profile";
+import { SafeLink } from "./SafeLink";
+
+export function Footer() {
+  return (
+    <footer className="border-t border-line">
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-5 py-8 md:flex-row md:items-end md:justify-between md:px-10 md:py-10">
+        <div>
+          <p className="font-display text-4xl tracking-[0.12em]">{profile.mark}</p>
+        </div>
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+          {profile.socials.map((item) => (
+            <SafeLink key={item.label} href={item.href} className="text-sm text-mute">
+              {item.label}
+            </SafeLink>
+          ))}
+          <a href="#top" className="text-sm text-paper">
+            กลับขึ้นบน
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
