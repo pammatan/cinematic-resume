@@ -4,7 +4,7 @@ import { SafeLink } from "./SafeLink";
 export function Footer() {
   return (
     <footer className="border-t border-line">
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-5 py-8 md:flex-row md:items-end md:justify-between md:px-10 md:py-10">
+      <div className="mx-auto flex max-w-[1400px] flex-row items-end justify-between gap-6 px-10 py-10">
         <div>
           <p className="font-display text-4xl tracking-[0.12em]">{profile.mark}</p>
         </div>

@@ -7,8 +7,8 @@ export function Journey() {
   const [openId, setOpenId] = useState(profile.journey[0]?.id ?? "");
 
   return (
-    <section id="journey" className="scroll-mt-24 border-t border-line py-16 md:py-28">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+    <section id="journey" className="scroll-mt-24 border-t border-line py-28">
+      <div className="mx-auto max-w-[1400px] px-10">
         <Reveal>
           <SectionHeading eyebrow="เส้นทาง" title="THE PATH" />
         </Reveal>
@@ -21,20 +21,20 @@ export function Journey() {
                 <h3>
                   <button
                     type="button"
-                    className="grid w-full gap-1 py-5 text-left md:grid-cols-[10rem_1fr_auto] md:items-baseline md:gap-8 md:py-6"
+                    className="grid w-full grid-cols-[10rem_1fr_auto] items-baseline gap-8 py-6 text-left"
                     aria-expanded={open}
                     aria-controls={panelId}
                     onClick={() => setOpenId(open ? "" : item.id)}
                   >
                     <span className="text-[0.72rem] tracking-[0.14em] text-signal">{item.years}</span>
-                    <span className="text-2xl md:text-3xl">{item.title}</span>
+                    <span className="text-3xl">{item.title}</span>
                     <span className="text-sm text-mute">{item.org}</span>
                   </button>
                 </h3>
                 <p
                   id={panelId}
                   hidden={!open}
-                  className="max-w-2xl pb-5 text-base leading-relaxed text-mute md:pb-6 md:pl-[12rem]"
+                  className="max-w-2xl pb-6 pl-[12rem] text-base leading-relaxed text-mute"
                 >
                   {item.detail}
                 </p>

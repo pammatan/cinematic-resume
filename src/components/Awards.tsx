@@ -6,8 +6,8 @@ export function Awards() {
   if (profile.awards.length === 0) return null;
 
   return (
-    <section id="awards" className="scroll-mt-24 border-t border-line py-16 md:py-28">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+    <section id="awards" className="scroll-mt-24 border-t border-line py-28">
+      <div className="mx-auto max-w-[1400px] px-10">
         <Reveal>
           <SectionHeading eyebrow="รางวัล" title="RECOGNITION" />
         </Reveal>
@@ -15,7 +15,7 @@ export function Awards() {
           {profile.awards.map((award, index) => (
             <li
               key={`${award.title}-${award.year}`}
-              className="grid gap-1 border-b border-line py-5 md:grid-cols-[4rem_1fr_auto] md:items-baseline md:gap-8 md:py-6"
+              className="grid grid-cols-[4rem_1fr_auto] items-baseline gap-8 border-b border-line py-6"
             >
               <span className="font-display text-3xl text-signal">
                 {String(index + 1).padStart(2, "0")}
